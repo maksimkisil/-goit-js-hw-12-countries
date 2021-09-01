@@ -1,0 +1,151 @@
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  color: rgb(47, 47, 47);
+}
+
+img {
+  /* display: block; */
+  /* max-width: 100%; */
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+/* input */
+.input-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.input {
+  width: 450px;
+  height: 35px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.card-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+/* card-name */
+.country-card-name {
+  margin-left: 30px;
+}
+.card-name-list {
+  list-style-type: '\01F449';
+  /* list-style-type: circle; */
+}
+.card-name-item {
+  padding-left: 10px;
+}
+.card-name-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* cards */
+.country-card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -30px;
+  margin-bottom: -30px;
+
+  list-style: none;
+}
+.country-card-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+.country-card-item {
+  /* width: 450px; */
+  padding: 20px;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.country-card-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+
+.country-box {
+  display: flex;
+}
+
+/* country left */
+.country {
+  margin-right: 20px;
+
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.topic {
+  margin-bottom: 20px;
+}
+
+.topic-bold {
+  font-weight: 700;
+}
+
+.language-list {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.language-item {
+  margin-bottom: 10px;
+}
+
+/* img right */
+.flag {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* overflow: hidden; */
+}
+.flag-img {
+  /* width: 95%; */
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  width: 190px;
+}

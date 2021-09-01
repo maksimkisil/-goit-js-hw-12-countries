@@ -1,0 +1,31 @@
+<h1 class='visually-hidden'>Country cards</h1>
+
+<ul class='country-card-list'>
+
+  {{#each this}}
+    <li class='country-card-item'>
+      <h2 class='country-card-title'>{{name}}</h2>
+
+      <div class='country-box'>
+
+        <div class='country'>
+          <p class='topic'><span class='topic-bold'>Capital: </span>{{capital}}</p>
+          <p class='topic'><span class='topic-bold'>Population: </span>{{population}}</p>
+          <p class='topic'><span class='topic-bold'>Languages: </span></p>
+
+          <ul class='language-list'>
+            {{#each languages}}
+              <li class='language-item'>{{name}}</li>
+            {{/each}}
+          </ul>
+        </div>
+
+        <div class='flag'>
+          <img class='flag-img' src='{{flag}}' alt='{{subregion}}' />
+        </div>
+
+      </div>
+    </li>
+  {{/each}}
+
+</ul>
